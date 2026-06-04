@@ -14,4 +14,17 @@ public class pedido {
         this.paraLlevar = paraLlevar;
     }
 
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public String getProducto() {
+        return producto;
+    }
+    
+
 }
