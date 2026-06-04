@@ -13,6 +13,12 @@ public class App {
         cola.add(new pedido("P003", "Nerea", "Zumo natural", 1));
         cola.add(new pedido("P004", "Ivan", "Tostada integral", 0));
         cola.add(new pedido("P005", "Laura", "Te verde", 1));
+
+        
+        System.out.println("Pedido pendientes:");
+        for (pedido p: cola){
+            System.out.println(p);
+        }
     }
 
 }
