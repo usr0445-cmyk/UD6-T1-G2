@@ -53,5 +53,11 @@ public class pedido {
         return "Pedido{" + "codigo='" + codigo + '\'' + ", cliente='" + cliente + '\'' + ", producto='" + producto + '\'' + ", paraLlevar=" + paraLlevar + '}';
     }
 
+    @Override
+    public boolean equals(Object obj) {
+    pedido otro = (pedido) obj;
+    return this.codigo.equals(otro.codigo);
+}
+
 
 }
