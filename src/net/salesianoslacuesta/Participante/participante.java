@@ -22,4 +22,13 @@ public class participante {
         return categoria;
     }
     
+    public void setIdJugador(String idJugador) {
+        this.idJugador = idJugador;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 }
