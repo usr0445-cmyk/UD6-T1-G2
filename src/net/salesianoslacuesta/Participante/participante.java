@@ -31,4 +31,9 @@ public class participante {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
+
+    @Override
+    public String toString() {
+        return "Participante{" + "idJugador='" + idJugador + '\'' + ", nombre='" + nombre + '\'' + ", categoria='" + categoria + '\'' + '}';
+    }
 }
