@@ -7,4 +7,11 @@ public class pedido {
     private String producto;
     private boolean paraLlevar;
 
+    public pedido(String codigo, String cliente, String producto, boolean paraLlevar) {
+        this.codigo = codigo;
+        this.cliente = cliente;
+        this.producto = producto;
+        this.paraLlevar = paraLlevar;
+    }
+
 }
