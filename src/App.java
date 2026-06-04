@@ -39,6 +39,10 @@ public class App {
         System.out.println("Extrayendo un pedido de historial...");
         pedido extraido = pilaPreparados.pop();
         System.out.println("Pedido extraido del historial: " + extraido);
+
+        System.out.println("Pedidos pendientes en la cola: : " + cola.size());
+
+        System.out.println("¿La cola esta vacia?:" + cola.isEmpty());
     }
 
 }
