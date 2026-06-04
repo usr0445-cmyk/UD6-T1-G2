@@ -22,6 +22,16 @@ public class App {
 
         System.out.println("Primer pedido sin eliminar:");
         System.out.println(cola.peek());
+
+        Stack<pedido> pilaPreparados = new Stack<>();
+
+        System.out.println("Preparando 3 pedidos...");
+        for ( int i = 0; i < 3; i++) {
+            pedido preparado = cola.poll();
+            pilaPreparados.push(preparado);
+
+            System.out.println("Pedido preparado: " + preparado);
+        }
     }
 
 }
