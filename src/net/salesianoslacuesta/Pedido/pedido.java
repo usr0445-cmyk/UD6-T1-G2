@@ -38,6 +38,7 @@ public class pedido {
         this.producto = producto;
     }
 
+    //
     public int getParaLlevar() {
         return paraLlevar;
     }
@@ -45,5 +46,12 @@ public class pedido {
     public void setParaLlevar(int paraLlevar) {
         this.paraLlevar = paraLlevar;
     }
+    //
+
+    @Override
+    public String toString() {
+        return "Pedido{" + "codigo='" + codigo + '\'' + ", cliente='" + cliente + '\'' + ", producto='" + producto + '\'' + ", paraLlevar=" + paraLlevar + '}';
+    }
+
 
 }
