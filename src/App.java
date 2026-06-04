@@ -32,6 +32,13 @@ public class App {
 
             System.out.println("Pedido preparado: " + preparado);
         }
+
+        System.out.println("Ultimo pedido preparado:");
+        System.out.println(pilaPreparados.peek());
+
+        System.out.println("Extrayendo un pedido de historial...");
+        pedido extraido = pilaPreparados.pop();
+        System.out.println("Pedido extraido del historial: " + extraido);
     }
 
 }
