@@ -11,4 +11,15 @@ public class participante {
         this.nombre = nombre;
         this.categoria = categoria;
     }
+
+    public String getIdJugador() {
+        return idJugador;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public String getCategoria() {
+        return categoria;
+    }
+    
 }
