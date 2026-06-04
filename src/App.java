@@ -19,6 +19,9 @@ public class App {
         for (pedido p: cola){
             System.out.println(p);
         }
+
+        System.out.println("Primer pedido sin eliminar:");
+        System.out.println(cola.peek());
     }
 
 }
