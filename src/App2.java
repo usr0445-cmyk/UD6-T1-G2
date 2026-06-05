@@ -32,7 +32,7 @@ import net.salesianoslacuesta.Participante.*;
     for (participante participante : participantes) { //Usamos for para para recorrer el HashSet de participantes
         System.out.println(participante);
 }
-    // Los duplicados no se añaden porque HashSet usa equals() y hashCode para evitar elementos repetidos
+    //Los duplicados no se añaden porque HashSet usa equals() y hashCode para evitar elementos repetidos
     System.out.println("Intentos de añadir: " + intentos);
     System.out.println("Participantes reales: " + participantes.size());
 
@@ -42,17 +42,26 @@ import net.salesianoslacuesta.Participante.*;
    for (participante participante : participantes) {
     String categoria = participante.getCategoria();
 
-// Ponemos aqui un containsKey sirve para comprobar si esa categoria ya existe en el mapa y si existe, hacemos un put aumentando en 1
+   //Ponemos aqui un containsKey sirve para comprobar si esa categoria ya existe en el mapa y si existe, hacemos un put aumentando en 1
     if (categorias.containsKey(categoria)) {
         categorias.put(categoria, categorias.get(categorias) + 1);
         
     } else {
         categorias.put(categoria, 1);
    }
+   
+}
+   System.out.println("Partcipantes por categoria: ");
+   System.out.println(categorias);
 
+   System.out.println("Junior: " + categorias.get("Junior"));
 
+   System.out.println("¿Existe la categorias experto? " + categorias.containsKey("Experto"));
 
-    
+   categorias.remove("Experto");
+
+   System.out.println("Categorias restantes: ");
+   System.out.println(categorias.keySet());
 }
 
 }
