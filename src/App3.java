@@ -31,7 +31,7 @@ public class App3 {
             }
 
         } catch (Exception e) {
-            // getMessage() devuelve el mensaje de error que explica que ha fallado
+            // getMessage devuelve el mensaje de error que explica que ha fallado
             System.out.println("Error al leer el fichero " + e.getMessage());
         }
 
@@ -43,7 +43,7 @@ public class App3 {
         try {
             String contenido = "Número total de películas: " + lista.size() + "\n";
 
-            //writeString() escribe el texto en un fichero, y si el fichero no existe lo crea en este caso
+            //writeString escribe el texto en un fichero, y si el fichero no existe lo crea en este caso
             Files.writeString(Path.of("resumen_peliculas.txt"), contenido);
 
         } catch (Exception e) {
@@ -57,6 +57,7 @@ public class App3 {
                 Path.of("log_peliculas.txt"), log, java.nio.file.StandardOpenOption.APPEND );
         
 
+    //Mostramos el mensaje del error si falla la escritura del log
     } catch (Exception e) {
         System.out.println("Error al escribir log: " + e.getMessage());
     }
