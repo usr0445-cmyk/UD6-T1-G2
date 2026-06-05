@@ -36,4 +36,12 @@ public class participante {
     public String toString() {
         return "Participante{" + "idJugador='" + idJugador + '\'' + ", nombre='" + nombre + '\'' + ", categoria='" + categoria + '\'' + '}';
     }
+
+    @Override
+    public boolean equals(Object obj) {
+    participante otro = (participante) obj;
+    return this.idJugador == (otro.idJugador);
 }
+
+}
+
