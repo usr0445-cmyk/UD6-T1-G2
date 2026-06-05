@@ -61,6 +61,7 @@ import net.salesianoslacuesta.Participante.*;
    categorias.remove("Experto");
 
    System.out.println("Categorias restantes: ");
+   // keySet devuelve solo los nombres de las categorias 
    System.out.println(categorias.keySet());
 }
 
