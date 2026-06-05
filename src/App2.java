@@ -32,13 +32,11 @@ import net.salesianoslacuesta.Participante.*;
     for (participante participante : participantes) { //Usamos for para para recorrer el HashSet de participantes
         System.out.println(participante);
 
-
-
-
-
-
-
-
+    // Los duplicados no se añaden porque HashSet usa equals() y hashCode para evitar elementos repetidos
+    System.out.println("Intentos de añadir: " + intentos);
+    System.out.println("Participantes reales: " + participantes.size());
 
     }
+}
+
 }
