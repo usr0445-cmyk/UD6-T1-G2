@@ -37,10 +37,17 @@ public class participante {
         return "Participante{" + "idJugador='" + idJugador + '\'' + ", nombre='" + nombre + '\'' + ", categoria='" + categoria + '\'' + '}';
     }
 
+    ///Aqui usamos Override con equals para comparar dos objetos de tipo participante y los dos participantes son iguales si tienen el mismo idJugador
     @Override
     public boolean equals(Object obj) {
     participante otro = (participante) obj;
     return this.idJugador == (otro.idJugador);
+
+    //Se usa hashCode porque el idJugador es un String, y el metodo equals de String ya esta implementado para comparar el contenido de los Strings
+    }
+    @Override
+    public int hashCode() {
+        return idJugador.hashCode();
 }
 
 }
