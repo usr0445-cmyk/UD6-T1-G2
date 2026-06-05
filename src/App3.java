@@ -43,22 +43,20 @@ public class App3 {
         try {
             String contenido = "Número total de películas: " + lista.size() + "\n";
 
-            // writeString() escribe el texto en un fichero, y si el fichero no existe lo crea.
+            // writeString() escribe el texto en un fichero, y si el fichero no existe lo crea en este caso
             Files.writeString(Path.of("resumen_peliculas.txt"), contenido);
 
         } catch (Exception e) {
             System.out.println("Error al escribir resumen: " + e.getMessage());
         }
+
+        try {
+            String log = "Ejecución realizada correctamente.";
+            Files.writeString(
+                    Path.of("log_peliculas.txt"), log, java.nio.file.StandardOpenOption.APPEND
+            );
         
-     
-
-
-
-
-
-
-
-
 
     }
+}
 }
