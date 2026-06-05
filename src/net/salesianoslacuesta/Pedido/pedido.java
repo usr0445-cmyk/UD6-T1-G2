@@ -54,9 +54,10 @@ public class pedido {
     }
 
     @Override
+    //Convertimos el objeto recibido a un objeto de tipo pedido.
     public boolean equals(Object obj) {
     pedido otro = (pedido) obj;
-    return this.codigo.equals(otro.codigo);
+    return this.codigo == (otro.codigo);
 }
 
 
