@@ -15,10 +15,14 @@ public class App3 {
         ArrayList<pelicula> lista = new ArrayList<>();
 
         try {
+            // Leemos todas las lineas del CSV
             List<String> lineas = Files.readAllLines(Path.of("data/peliculas.csv"));
 
             for (int i = 1; i < lineas.size(); i++) {
                 String linea = lineas.get(i);
+
+                int coma1 = linea.indexOf(",");
+                int coma2 = linea.indexOf(",");
                 
             }
 
