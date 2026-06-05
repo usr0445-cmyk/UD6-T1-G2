@@ -54,10 +54,13 @@ public class App3 {
             String log = "Ejecución realizada correctamente.";
             Files.writeString(
                 //APPEND añade el texto al final del fichero sin borrar lo anterior
-                Path.of("log_peliculas.txt"), log, java.nio.file.StandardOpenOption.APPEND
-            );
+                Path.of("log_peliculas.txt"), log, java.nio.file.StandardOpenOption.APPEND );
         
 
+    } catch (Exception e) {
+        System.out.println("Error al escribir log: " + e.getMessage());
     }
+
+    System.out.println("Proceso completado");
 }
 }
