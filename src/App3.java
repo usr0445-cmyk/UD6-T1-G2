@@ -30,9 +30,12 @@ public class App3 {
                 
             }
 
-
-
+        } catch (Exception e) {
+            // getMessage() devuelve el mensaje de error que explica qué ha fallado
+            System.out.println("Error al leer el fichero " + e.getMessage());
         }
+
+
         
      
 
