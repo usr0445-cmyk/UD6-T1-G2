@@ -18,5 +18,14 @@ import net.salesianoslacuesta.Participante.*;
     participante p7 = new participante("J006", "Alba", "Experto");
 
 
+    int intentos = 0;
+
+    intentos++; participantes.add(p1);
+    intentos++; participantes.add(p2);
+    intentos++; participantes.add(p3);
+    intentos++; participantes.add(p4); //Este participante no se agregará porque tiene el mismo idJugador que p1
+    intentos++; participantes.add(p5);
+    intentos++; participantes.add(p6);
+    intentos++; participantes.add(p7);
     }
 }
