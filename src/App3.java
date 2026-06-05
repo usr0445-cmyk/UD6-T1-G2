@@ -40,6 +40,14 @@ public class App3 {
             System.out.println(pelicula);
         }
 
+        try {
+            String contenido = "Número total de películas: " + lista.size() + "\n";
+
+            Files.writeString(Path.of("resumen_peliculas.txt"), contenido);
+
+        } catch (Exception e) {
+            System.out.println("Error al escribir resumen: " + e.getMessage());
+        }
         
      
 
