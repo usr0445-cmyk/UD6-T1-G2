@@ -16,6 +16,14 @@ public class App3 {
 
         try {
             List<String> lineas = Files.readAllLines(Path.of("data/peliculas.csv"));
+
+            for (int i = 1; i < lineas.size(); i++) {
+                String linea = lineas.get(i);
+                
+            }
+
+
+
         }
         
      
