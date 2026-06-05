@@ -6,8 +6,17 @@ import net.salesianoslacuesta.Participante.*;
  public class App2 {
     public static void main(String[] args) {
 
- // Aqui usamos HashSet que es para almacenar objetos de tipo participante sin permitir duplicados, no se pueden agregar dos participantes con el mismo idJugador
+ //Aqui usamos HashSet que es para almacenar objetos de tipo participante sin permitir duplicados, no se pueden agregar dos participantes con el mismo idJugador
     HashSet<participante> participantes = new HashSet<>();
-    
+
+    participante p1 = new participante("J001", "Adrian", "Junior");
+    participante p2 = new participante("J002", "Paula", "Senior");
+    participante p3 = new participante("J003", "Samuel", "Senior");
+    participante p4 = new participante("J001", "Adrian repetido", "Senior");
+    participante p5 = new participante("J004", "Claudia", "Senior");
+    participante p6 = new participante("J005", "Diego", "Junior");
+    participante p7 = new participante("J006", "Alba", "Experto");
+
+
     }
 }
