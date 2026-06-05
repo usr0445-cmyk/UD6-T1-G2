@@ -31,10 +31,14 @@ public class App3 {
             }
 
         } catch (Exception e) {
-            // getMessage() devuelve el mensaje de error que explica qué ha fallado
+            // getMessage() devuelve el mensaje de error que explica que ha fallado
             System.out.println("Error al leer el fichero " + e.getMessage());
         }
 
+        System.out.println("Peliculas leidas: ");
+        for (pelicula pelicula : lista) {
+            System.out.println(pelicula);
+        }
 
         
      
