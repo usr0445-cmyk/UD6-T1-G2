@@ -27,5 +27,18 @@ import net.salesianoslacuesta.Participante.*;
     intentos++; participantes.add(p5);
     intentos++; participantes.add(p6);
     intentos++; participantes.add(p7);
+
+    System.out.println("Participantes registrados:");
+    for (participante participante : participantes) { //Usamos for para para recorrer el HashSet de participantes
+        System.out.println(participante);
+
+
+
+
+
+
+
+
+
     }
 }
