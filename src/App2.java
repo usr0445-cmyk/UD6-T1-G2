@@ -39,6 +39,17 @@ import net.salesianoslacuesta.Participante.*;
     //Usamos HashMap que es para almacenar pares clave valor, en este caso la clave es la categoria y el valor es el numero de participantes
     HashMap<String, Integer> categorias = new HashMap<>();
 
+   for (participante participante : participantes) {
+    String categoria = participante.getCategoria();
+
+// Ponemos aqui un containsKey sirve para comprobar si esa categoria ya existe en el mapa y si existe, hacemos un put aumentando en 1
+    if (categorias.containsKey(categoria)) {
+        categorias.put(categoria, categorias.get(categorias) + 1);
+        
+    } else {
+        categorias.put(categoria, 1);
+   }
+
 
 
     
